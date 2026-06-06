@@ -1,5 +1,5 @@
 Safety Stock Optimization — King's Formula vs. Weighted Average Method
-Supply Chain Analytics | Python | Inventory Management
+Supply Chain Analytics | Excel | Inventory Management
 > Internship Project — Footwear Manufacturing Company (Supply Chain Management Division)
 ---
 Problem Statement
