@@ -76,9 +76,9 @@ Project Structure
 safety-stock-optimization/
 │
 ├── data/
-│   └── sample_sales_data.csv       # Anonymized sample (3-month sales, 6 articles)
+│   └── Grouping_to_different_formulas.xlsx       # 
 ├── analysis/
-│   └── safety_stock_calculations.xlsx  # Full workings: all 105 articles, 4 methods
+│   └── final_working_of_articles_and_methods.xlsx  # Full workings: all 105 articles, 4 methods
 ├── README.md
 ```
 > Note: Full dataset is proprietary to the company. Only anonymized sample data is shared here.
