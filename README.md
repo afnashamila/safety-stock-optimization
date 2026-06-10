@@ -76,9 +76,9 @@ Project Structure
 safety-stock-optimization/
 │
 ├── data/
-│   └── Grouping_to_different_formulas.xlsx       # 
+│   └── analysis_grade_method_assignment.xlsx.    # 
 ├── analysis/
-│   └── final_working_of_articles_and_methods.xlsx  # Full workings: all 105 articles, 4 methods
+│   └── analysis_kings_formula_analysis.xlsx  # Full workings: all 105 articles, 4 methods
 ├── README.md
 ```
 > Note: Full dataset is proprietary to the company. Only anonymized sample data is shared here.
