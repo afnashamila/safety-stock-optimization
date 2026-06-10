@@ -27,56 +27,64 @@ ii) stockouts during peak sales windows — costing the company both capital and
 To evaluate an alternative, statistically grounded approach (King's Formula) against the company's existing weighted average method.
 Assign the most appropriate formula to each product grade based on the nature of its demand and lead time variability, and generate reorder points to trigger timely restocking.
 ---
-Methodology
-Dataset
-~105 unique articles (SKUs) across 8 product grades.
-Sales data for 3 months (February, March, April) at national level, later extended to depot-level analysis for two states.
-Lead time data collected across 10 orders: average lead time = 8.8 days, standard deviation = 1.03 days.
-Existing Method (Baseline)
-The company used a weighted average formula called NOM (normalized order measure):
+## Methodology
+
+### Dataset
+- ~105 unique articles (SKUs) across 8 product grades
+- Sales data for 3 months (February, March, April) at national level
+- Lead time data across 10 orders: average = **8.8 days**, standard deviation = **1.03 days**
+
+---
+
+### Existing Method (Baseline)
+The company used a weighted average formula called **NOM**:
 ```
 NOM = Weighted Average Sales + (Transit Day Sale / 26) × 10
 
 Transit Day Sale = Per Day Sale × 12
 ```
-Weights assigned: 50% to the highest-sales month, and 20%, 15%, 15% to the remaining months. This method ignores demand variability and has no probabilistic service level target.
-Alternative Method — King's Formula.
+Weights: 50% to the highest-sales month, 20% / 15% / 15% to the rest.
+This method ignores demand variability and has no probabilistic service level target.
 
-Four variants of King's Formula were applied depending on the source of variability for each product grade:
+---
 
-Formula	When Applied	Equation
-Method 1	Demand + Lead Time uncertainty (independent)	`SS = z × √(LT_avg × σ_demand² + avg_sales² × σ_LT²)`
+### Alternative Method — King's Formula
 
-Method 2	Demand uncertainty only	`SS = z × σ_demand × √LT_avg`
+Four variants were applied depending on the source of variability:
 
-Method 3	Lead time uncertainty only	`SS = z × avg_sales × σ_LT`
+| Method | When Applied | Formula |
+|--------|-------------|---------|
+| Method 1 | Demand + Lead Time uncertainty (independent) | `SS = z × √(LT_avg × σ_demand² + avg_sales² × σ_LT²)` |
+| Method 2 | Demand uncertainty only | `SS = z × σ_demand × √LT_avg` |
+| Method 3 | Lead time uncertainty only | `SS = z × avg_sales × σ_LT` |
+| Method 4 | Demand + Lead Time uncertainty (dependent) | `SS = z × σ_demand × √LT_avg + z × avg_sales × σ_LT` |
 
-Method 4	Demand + Lead Time uncertainty (dependent)	`SS = z × σ_demand × √LT_avg + z × avg_sales × σ_LT`
+- **Service level target:** 90% → z-score = 1.28
+- **Average demand:** total 3-month sales ÷ 78 working days (26 days/month)
 
-Service level target: 90% → z-score = 1.28
+---
 
-Average demand was calculated as total 3-month sales ÷ 78 working days (26 days/month).
+### Formula Assignment by Product Grade
 
-Formula Assignment by Product Grade.
+| Grade | Method | Rationale |
+|-------|--------|-----------|
+| Top Models | Method 1 | High, consistent sales; demand and lead time variabilities are independent |
+| Competition Similar | Method 4 | Lead time changes affect demand; maximum stock needed |
+| Fast Moving | Method 1 | High sales volume, continuous demand |
+| Running | Method 1 | High sales, always in demand |
+| PT Fast Moving | Method 1 | High sales volume |
+| PT Running | Method 1 | Some articles have identical Method 1 and 2 outputs |
+| PT Top Models | Method 1 | High, consistent demand |
+| PT New Models | Method 2 | New to market; demand still building; only demand-side uncertainty expected |
 
-Each of the 8 product grades was analysed and assigned the most appropriate formula:
-Grade	Method Assigned	Rationale
-Top Models	Method 1	High, consistent sales; lead time and demand variabilities are independent
-Competition Similar	Method 4 (Method 1 for one high-volume article)	Lead time changes affect demand; maximum stock needed
-Fast Moving	Method 1	High sales volume, continuous demand
-Running	Method 1	High sales, always in demand
-PT Fast Moving	Method 1	High sales volume
-PT Running	Method 1 (Method 1 or 2 for 3 articles)	Some articles have identical Method 1 and 2 outputs
-PT Top Models	Method 1	High, consistent demand
-PT New Models	Method 2	New to market; demand still building; only demand-side uncertainty expected
-Reorder Point
-For each article:
+---
+
+### Reorder Point
 ```
 Reorder Point = Safety Stock + (Average Daily Sales × Lead Time)
 ```
-An intimation threshold was also built: if total stock on hand falls within 10% of the reorder point, a restocking alert is triggered.
-
-For very high-demand articles where the formula-derived reorder point exceeded practical depot storage capacity, a 90% reorder point was applied instead.
+- An **intimation threshold** was built: if stock on hand falls within 10% of the reorder point, a restocking alert is triggered
+- For very high-demand articles where the reorder point exceeded depot storage capacity, a **90% reorder point** was applied instead
 ---
 ## Results
 ![Formula Comparison](image/formula_comparison.png)
