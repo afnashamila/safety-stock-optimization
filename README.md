@@ -10,16 +10,23 @@ Supply Chain Analytics | Excel | Inventory Management
 ## Problem Statement
 
 In footwear manufacturing supply chains, demand is seasonal, promotional, and uncertain. The company's existing safety stock method — a weighted average formula — relied on simplified assumptions and failed to account for:
+
 a) Demand variability across product grades (fast-moving, top models, new launches, etc.)
+
 b) Lead time uncertainty arising from manufacturing cycle time (2–3 days) and transit time (7–10 days nationally)
+
 c) No reorder point system, meaning restocking decisions were reactive rather than planned.
+
 This led to two chronic outcomes: 
+
 i) excess inventory during off-peak periods, and
 ii) stockouts during peak sales windows — costing the company both capital and customer service levels.
 ---
 ##Objective
 
-To evaluate an alternative, statistically grounded approach (King's Formula) against the company's existing weighted average method. Assign the most appropriate formula to each product grade based on the nature of its demand and lead time variability, and generate reorder points to trigger timely restocking.
+To evaluate an alternative, statistically grounded approach (King's Formula) against the company's existing weighted average method.
+
+Assign the most appropriate formula to each product grade based on the nature of its demand and lead time variability, and generate reorder points to trigger timely restocking.
 ---
 Methodology
 Dataset
@@ -60,6 +67,7 @@ For each article:
 Reorder Point = Safety Stock + (Average Daily Sales × Lead Time)
 ```
 An intimation threshold was also built: if total stock on hand falls within 10% of the reorder point, a restocking alert is triggered.
+
 For very high-demand articles where the formula-derived reorder point exceeded practical depot storage capacity, a 90% reorder point was applied instead.
 ---
 ## Results
@@ -80,10 +88,14 @@ For very high-demand articles where the formula-derived reorder point exceeded p
 - The analysis identified that the company's core stockout problem was **distribution failure to depots**, not safety stock quantity — a structural finding beyond the formula comparison
 ---
 Business Impact
-Provided a statistically grounded alternative to an ad hoc weighted average formula, incorporating a target service level (90%) for the first time
-Introduced a reorder point system — the company previously had no formal trigger for restocking
-Identified the root cause of stockouts: distribution failure to depots, not formula design — a finding with direct strategic implications
-Delivered grade-wise formula assignments for all 105 SKUs, making the model operationally actionable without requiring one-size-fits-all assumptions
+Provided a statistically grounded alternative to an ad hoc weighted average formula, incorporating a target service level (90%) for the first time.
+
+Introduced a reorder point system — the company previously had no formal trigger for restocking.
+
+Identified the root cause of stockouts: distribution failure to depots, not formula design — a finding with direct strategic implications.
+
+Delivered grade-wise formula assignments for all 105 SKUs, making the model operationally actionable without requiring one-size-fits-all assumptions.
+
 Recommended a depot-first stocking strategy: fill each depot to its safety stock level before applying reorder logic — directly addressing the peak-season shortage problem
 ---
 Tools Used
@@ -107,9 +119,13 @@ safety-stock-optimization/
 ---
 Key Learnings
 Applying a single formula to all SKUs ignores meaningful differences in demand behaviour across product grades — grade-wise assignment is more accurate.
+
 A probabilistic safety stock model (with explicit service level) is more defensible and adjustable than a weighted average with arbitrary month weights.
+
 Operational constraints (depot capacity, distribution reliability) can render even a well-designed formula ineffective — inventory optimization must account for the full supply chain, not just the formula.
+
 Reorder points are as important as safety stock levels; without a trigger, safety stock is a static buffer rather than a dynamic system.
+
 ---
 Reference
 King, P.L. (2011). Crack the Code: Understanding Safety Stock and Mastering its Equations. APICS Magazine. Available at: MIT Reading List
