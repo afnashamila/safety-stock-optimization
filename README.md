@@ -1,19 +1,25 @@
+# Safety Stock Optimization — King's Formula vs. Weighted Average Method
+
 ![Excel](https://img.shields.io/badge/Excel-217346?style=flat&logo=microsoftexcel&logoColor=white)
 ![Supply Chain](https://img.shields.io/badge/Supply%20Chain%20Analytics-1B3A5C?style=flat)
 ![Status](https://img.shields.io/badge/Status-Complete-brightgreen)
-Safety Stock Optimization — King's Formula vs. Weighted Average Method
+
 Supply Chain Analytics | Excel | Inventory Management
-> Internship Project — Footwear Manufacturing Company (Supply Chain Management Division)
+> Internship Project — Footwear Manufacturing Company | Supply Chain Management Division
 ---
-Problem Statement
+## Problem Statement
+
 In footwear manufacturing supply chains, demand is seasonal, promotional, and uncertain. The company's existing safety stock method — a weighted average formula — relied on simplified assumptions and failed to account for:
-Demand variability across product grades (fast-moving, top models, new launches, etc.)
-Lead time uncertainty arising from manufacturing cycle time (2–3 days) and transit time (7–10 days nationally)
-No reorder point system, meaning restocking decisions were reactive rather than planned
-This led to two chronic outcomes: excess inventory during off-peak periods, and stockouts during peak sales windows — costing the company both capital and customer service levels.
+a) Demand variability across product grades (fast-moving, top models, new launches, etc.)
+b) Lead time uncertainty arising from manufacturing cycle time (2–3 days) and transit time (7–10 days nationally)
+c) No reorder point system, meaning restocking decisions were reactive rather than planned
+This led to two chronic outcomes: 
+i) excess inventory during off-peak periods, and
+ii) stockouts during peak sales windows — costing the company both capital and customer service levels.
 ---
-Objective
-To evaluate an alternative, statistically grounded approach (King's Formula) against the company's existing weighted average method, assign the most appropriate formula to each product grade based on the nature of its demand and lead time variability, and generate reorder points to trigger timely restocking.
+##Objective
+
+To evaluate an alternative, statistically grounded approach (King's Formula) against the company's existing weighted average method. Assign the most appropriate formula to each product grade based on the nature of its demand and lead time variability, and generate reorder points to trigger timely restocking.
 ---
 Methodology
 Dataset
