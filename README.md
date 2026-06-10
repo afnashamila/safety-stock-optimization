@@ -104,10 +104,10 @@ safety-stock-optimization/
 > Note: Full dataset is proprietary to the company. Only anonymized sample data is shared here.
 ---
 Key Learnings
-Applying a single formula to all SKUs ignores meaningful differences in demand behaviour across product grades — grade-wise assignment is more accurate
-A probabilistic safety stock model (with explicit service level) is more defensible and adjustable than a weighted average with arbitrary month weights
-Operational constraints (depot capacity, distribution reliability) can render even a well-designed formula ineffective — inventory optimization must account for the full supply chain, not just the formula
-Reorder points are as important as safety stock levels; without a trigger, safety stock is a static buffer rather than a dynamic system
+Applying a single formula to all SKUs ignores meaningful differences in demand behaviour across product grades — grade-wise assignment is more accurate.
+A probabilistic safety stock model (with explicit service level) is more defensible and adjustable than a weighted average with arbitrary month weights.
+Operational constraints (depot capacity, distribution reliability) can render even a well-designed formula ineffective — inventory optimization must account for the full supply chain, not just the formula.
+Reorder points are as important as safety stock levels; without a trigger, safety stock is a static buffer rather than a dynamic system.
 ---
 Reference
 King, P.L. (2011). Crack the Code: Understanding Safety Stock and Mastering its Equations. APICS Magazine. Available at: MIT Reading List
