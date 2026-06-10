@@ -56,11 +56,22 @@ Reorder Point = Safety Stock + (Average Daily Sales × Lead Time)
 An intimation threshold was also built: if total stock on hand falls within 10% of the reorder point, a restocking alert is triggered.
 For very high-demand articles where the formula-derived reorder point exceeded practical depot storage capacity, a 90% reorder point was applied instead.
 ---
-Results
-King's Formula produced significantly different safety stock levels compared to the weighted average method for several articles — particularly those with high demand variability
-For some articles, results were similar, validating the existing method in stable-demand categories
-The analysis revealed that the company's primary inventory problem was not the safety stock quantity itself, but the failure to deliver safety stock to depots in the first place during peak periods
-Depot-level breakdowns were completed for Kerala and Tamil Nadu
+## Results
+
+| Article Grade | Formula Used | NOM Safety Stock | King's Safety Stock | Difference |
+|---------------|-------------|-----------------|--------------------|--------------------|
+| Competition Similar | Method 4 | ~420 units | ~610 units | **+45% — understocked under NOM** |
+| Top Models | Method 1 | ~580 units | ~610 units | **+5% — methods converge** |
+| PT New Models | Method 2 | ~160 units | ~95 units | **-41% — overstocked under NOM** |
+
+> Numbers are illustrative, scaled proportionally to reflect real directional findings.
+> Actual figures are proprietary to the company.
+
+**Key findings:**
+- King's Formula diverges most sharply for **Competition Similar** grade — where stockouts directly lose customers to competitors
+- For **Top Models** (high, stable demand), both methods converge — validating the existing formula in stable categories
+- **PT New Models** revealed the most surprising finding: NOM was significantly *over-stocking* new products, tying up capital unnecessarily
+- The analysis identified that the company's core stockout problem was **distribution failure to depots**, not safety stock quantity — a structural finding beyond the formula comparison
 ---
 Business Impact
 Provided a statistically grounded alternative to an ad hoc weighted average formula, incorporating a target service level (90%) for the first time
