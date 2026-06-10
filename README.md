@@ -1,7 +1,6 @@
 ![Excel](https://img.shields.io/badge/Excel-217346?style=flat&logo=microsoftexcel&logoColor=white)
 ![Supply Chain](https://img.shields.io/badge/Supply%20Chain%20Analytics-1B3A5C?style=flat)
 ![Status](https://img.shields.io/badge/Status-Complete-brightgreen)
-![License](https://img.shields.io/badge/License-MIT-blue)
 Safety Stock Optimization — King's Formula vs. Weighted Average Method
 Supply Chain Analytics | Excel | Inventory Management
 > Internship Project — Footwear Manufacturing Company (Supply Chain Management Division)
