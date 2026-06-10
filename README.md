@@ -57,6 +57,7 @@ An intimation threshold was also built: if total stock on hand falls within 10% 
 For very high-demand articles where the formula-derived reorder point exceeded practical depot storage capacity, a 90% reorder point was applied instead.
 ---
 ## Results
+![Formula Comparison](image/formula_comparison.png)
 | Article Grade | Formula Used | NOM Safety Stock | King's Safety Stock | Difference |
 |---------------|-------------|-----------------|--------------------|--------------------|
 | Competition Similar | Method 4 | ~420 units | ~610 units | **+45% — understocked under NOM** |
