@@ -22,7 +22,7 @@ This led to two chronic outcomes:
 i) excess inventory during off-peak periods, and
 ii) stockouts during peak sales windows — costing the company both capital and customer service levels.
 ---
-#Objective
+## Objective
 
 To evaluate an alternative, statistically grounded approach (King's Formula) against the company's existing weighted average method.
 Assign the most appropriate formula to each product grade based on the nature of its demand and lead time variability, and generate reorder points to trigger timely restocking.
@@ -104,22 +104,16 @@ Reorder Point = Safety Stock + (Average Daily Sales × Lead Time)
 - The analysis identified that the company's core stockout problem was **distribution failure to depots**, not safety stock quantity — a structural finding beyond the formula comparison
 ---
 Business Impact
-Provided a statistically grounded alternative to an ad hoc weighted average formula, incorporating a target service level (90%) for the first time.
-
-Introduced a reorder point system — the company previously had no formal trigger for restocking.
-
-Identified the root cause of stockouts: distribution failure to depots, not formula design — a finding with direct strategic implications.
-
-Delivered grade-wise formula assignments for all 105 SKUs, making the model operationally actionable without requiring one-size-fits-all assumptions.
-
-Recommended a depot-first stocking strategy: fill each depot to its safety stock level before applying reorder logic — directly addressing the peak-season shortage problem
+- Provided a statistically grounded alternative to an ad hoc weighted average formula, incorporating a target service level (90%) for the first time.
+- Introduced a reorder point system — the company previously had no formal trigger for restocking.
+- Identified the root cause of stockouts: distribution failure to depots, not formula design — a finding with direct strategic implications.
+- Delivered grade-wise formula assignments for all 105 SKUs, making the model operationally actionable without requiring one-size-fits-all assumptions.
+- Recommended a depot-first stocking strategy: fill each depot to its safety stock level before applying reorder logic — directly addressing the peak-season shortage problem
 ---
 Tools Used
-Microsoft Excel — safety stock calculations, reorder point modelling, grade-wise analysis, depot-level breakdowns.
-
-King's Formula (P.L. King, 2011) — academic framework for safety stock under uncertainty.
-
-Z-score / Normal distribution — for service level to safety factor conversion.
+- Microsoft Excel — safety stock calculations, reorder point modelling, grade-wise analysis, depot-level breakdowns.
+- King's Formula (P.L. King, 2011) — academic framework for safety stock under uncertainty.
+- Z-score / Normal distribution — for service level to safety factor conversion.
 ---
 Project Structure
 ```
@@ -144,7 +138,7 @@ Reorder points are as important as safety stock levels; without a trigger, safet
 
 ---
 Reference
-King, P.L. (2011). Crack the Code: Understanding Safety Stock and Mastering its Equations. APICS Magazine. Available at: MIT Reading List
+- King, P.L. (2011). Crack the Code: Understanding Safety Stock and Mastering its Equations. APICS Magazine. Available at: MIT Reading List
 ---
 About
 Afna | BA Economics | Supply Chain & Data Analytics  
