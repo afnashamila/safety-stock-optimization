@@ -12,7 +12,7 @@ Supply Chain Analytics | Excel | Inventory Management
 In footwear manufacturing supply chains, demand is seasonal, promotional, and uncertain. The company's existing safety stock method — a weighted average formula — relied on simplified assumptions and failed to account for:
 a) Demand variability across product grades (fast-moving, top models, new launches, etc.)
 b) Lead time uncertainty arising from manufacturing cycle time (2–3 days) and transit time (7–10 days nationally)
-c) No reorder point system, meaning restocking decisions were reactive rather than planned
+c) No reorder point system, meaning restocking decisions were reactive rather than planned.
 This led to two chronic outcomes: 
 i) excess inventory during off-peak periods, and
 ii) stockouts during peak sales windows — costing the company both capital and customer service levels.
