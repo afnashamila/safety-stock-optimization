@@ -58,6 +58,7 @@ For very high-demand articles where the formula-derived reorder point exceeded p
 ---
 ## Results
 
+![Formula Comparison](images/formula_comparison.png)
 | Article Grade | Formula Used | NOM Safety Stock | King's Safety Stock | Difference |
 |---------------|-------------|-----------------|--------------------|--------------------|
 | Competition Similar | Method 4 | ~420 units | ~610 units | **+45% — understocked under NOM** |
