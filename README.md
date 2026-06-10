@@ -24,8 +24,8 @@ To evaluate an alternative, statistically grounded approach (King's Formula) aga
 Methodology
 Dataset
 ~105 unique articles (SKUs) across 8 product grades
-Sales data for 3 months (February, March, April) at national level, later extended to depot-level analysis for two states
-Lead time data collected across 10 orders: average lead time = 8.8 days, standard deviation = 1.03 days
+Sales data for 3 months (February, March, April) at national level, later extended to depot-level analysis for two states.
+Lead time data collected across 10 orders: average lead time = 8.8 days, standard deviation = 1.03 days.
 Existing Method (Baseline)
 The company used a weighted average formula called NOM (normalized order measure):
 ```
