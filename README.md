@@ -87,9 +87,11 @@ Delivered grade-wise formula assignments for all 105 SKUs, making the model oper
 Recommended a depot-first stocking strategy: fill each depot to its safety stock level before applying reorder logic — directly addressing the peak-season shortage problem
 ---
 Tools Used
-Microsoft Excel — safety stock calculations, reorder point modelling, grade-wise analysis, depot-level breakdowns
-King's Formula (P.L. King, 2011) — academic framework for safety stock under uncertainty
-Z-score / Normal distribution — for service level to safety factor conversion
+Microsoft Excel — safety stock calculations, reorder point modelling, grade-wise analysis, depot-level breakdowns.
+
+King's Formula (P.L. King, 2011) — academic framework for safety stock under uncertainty.
+
+Z-score / Normal distribution — for service level to safety factor conversion.
 ---
 Project Structure
 ```
